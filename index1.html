@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Yianni's Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- P5.JS -->
+  <script src="../2d-graphics-p5/js/p5.js"></script>
+  <script src="../2d-graphics-p5/js/dat.gui.js"></script>
+  <script src="../2d-graphics-p5/js/main.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
+    </head>
+
+    <body>
+      <header name="home" class="hero" id="heroin">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-6 col-xs-12">
+              <nav>
+                <div id="menu-toggle">
+                  <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                  <div class="cross">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+                <ul class="main-nav">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="hero-text">
+                <h1><span>Hi, I'm</span><br>Yianni Moustakas.</h1>
+                <h3>I'm a Software Developer from Sydney</h3>
+                <p>P.S. HIT THE SHIFT KEY WITH YOUR MOUSE IN THE BLACK AREA</p>
+                <br>
+                <p class="hero-text-covered">P.P.S. PLAY WITH THE CONTROLS IN THE TOP RIGHT CORNER</p>
+                <br>
+                <p class="hero-text-covered">Have Fun!</p>
+                <br>
+                <ul class="social-links">
+                  <li class="label">Join me here</li>
+                  <li><a href="#"><img src="assets/twitter-icon.png"></a></li>
+                  <li><a href="#"><img src="assets/github-icon.png"></a></li>
+                  <li><a href="#"><img src="assets/linkedin-icon.png"></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+      </header>
+
+      <section class="testimonial">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-push-0">
+              <div class="swiper-container testimonial-swiper">
+                  <div id="about" class="swiper-slide testimonial-box blue">
+                    <h1>About Me</h1
+                    <p>I am a Web Developer and a proud GA grad. I love coding yet problem solving is my true passion.</p>
+
+                    <p>I moved into a sales role straight after uni, as a way to improve my business acumen and get an understanding of the way the tech world works. I have spent the past year learning how to code and now with ths skills I've learned I can confidently say I am ready to apply my skills to make a difference in the world.</p>
+
+                    <p>I am really enjoying using React and Node.JS at the moment and would love the opportunity to build great products with a great team! </p>
+                    <div class="text-right">
+                      <p class="name">- Yianni Moustakas</p>
+                      <p class="designation">Web Developer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h4 class="sub-heading">Open to</h4>
+              <h1 class="heading purple"><span class="blue">full-time</span> opportunities <br>in Sydney</h1>
+              <!-- Swiper -->
+              <div class="swiper-container client-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide client-box">
+                    <img src="assets/roT8-logo.png" class="client-logo">
+                    <h3 class="text-left title">Project1: RoT8's</h3>
+                    <p class="text-left tag">Rails, jQuery</p>
+                    <p class="text-left"><a href="#">Know More &#8674;</a></p>
+                  </div>
+                  <div class="swiper-slide client-box">
+                    <img src="assets/hey-brew-logo.png" class="client-logo">
+                    <h3 class="text-left title">Final Project: Hey Brew</h3>
+                    <p class="text-left tag">React, Rails, Google Maps API</p>
+                    <p class="text-left"><a href="#">Know More &#8674;</a></p>
+                  </div>
+                  <div class="swiper-slide client-box">
+                    <img src="assets/solution-undefined-logo.png" class="client-logo">
+                    <h3 class="text-left title">Project 2: Solution <i>Undefined</i></h3>
+                    <p class="text-left tag">Rails, jQuery</p>
+                    <p class="text-left"><a href="#">Know More &#8674;</a></p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Statistics -->
+      <!-- <section class="stats">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center stat-box">
+              <h1 class="purple"><span class="counter">600</span></h1>
+              <h3>Hours</h3>
+            </div>
+            <div class="col-md-4 text-center stat-box">
+              <h1 class="blue counter">4</h1>
+              <h3>Projects</h3>
+            </div>
+            <div class="col-md-4 text-center stat-box">
+              <h1 class="pink"><span class="counter">1.2</span>k</h1>
+              <h3>Cups of Coffee</h3>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Footer -->
+      <footer>
+        <div class="container-fluid">
+          <div class="row footer">
+            <div id="contact" class="col-md-12 text-center">
+              <h1><span>Contact Me</span><br>Around The Web</h1>
+              <ul class="social-links">
+                <li><a href="#"><img src="assets/twitter-icon.png"></a></li>
+                <li><a href="#"><img src="assets/github-icon.png"></a></li>
+                <li><a href="#"><img src="assets/linkedin-icon.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Some Javascript -->
+
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/swiper.jquery.min.js"></script>
+
+      <!-- Initialize Client Swiper -->
+      <script>
+      var swiper1 = new Swiper('.client-swiper', {
+        slidesPerView: 3,
+        // paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 60,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination'
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          }
+        }
+      });
+      // Initialize Testimonial Swiper
+      // var swiper2 = new Swiper('.testimonial-swiper', {
+      //   slidesPerView: 3,
+      //   pagination: '.swiper-pagination',
+      //   // paginationClickable: true,
+      //   spaceBetween: 30,
+      //   // grabCursor: true,
+      //   freeMode: true,
+      //   breakpoints: {
+      //     // when window width is <= 320px
+      //     320: {
+      //       slidesPerView: 1,
+      //       spaceBetween: 10,
+      //     },
+      //     // when window width is <= 480px
+      //     480: {
+      //       slidesPerView: 1,
+      //       spaceBetween: 10
+      //     },
+      //     // when window width is <= 640px
+      //     640: {
+      //       slidesPerView: 1,
+      //       spaceBetween: 10
+      //     }
+      //   }
+      // });
+      </script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <script>
+      // Counterup
+      $('.counter').counterUp({
+        time: 500
+      });
+
+      // Main Navigation
+      $('#menu-toggle').click(function(){
+        $(this).toggleClass('open'),
+        $('.main-nav').toggleClass('show-it');
+      })
+      </script>
+
+    </body>
+    </html>
