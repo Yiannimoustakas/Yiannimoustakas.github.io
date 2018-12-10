@@ -46,7 +46,6 @@ img {
 /* Hero Section */
 header.hero {
   /* background: url(../assets/hero-bg.jpg) no-repeat center center fixed; */
-  background-color: #000000
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -496,6 +495,12 @@ ul.main-nav.show-it {
   }
   h1.heading {
     font-size: 2em;
+  }
+  canvas {
+    display: none;
+  }
+  div.hero-text {
+    color: #000000;
   }
   header.hero {
     text-align: center;
