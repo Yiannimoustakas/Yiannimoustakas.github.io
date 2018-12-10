@@ -499,8 +499,8 @@ ul.main-nav.show-it {
   canvas {
     display: none;
   }
-  div.hero-text {
-    color: #000000;
+  .hero {
+    background-color: #000000;
   }
   header.hero {
     text-align: center;
