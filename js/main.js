@@ -3,6 +3,7 @@
 const controls = {
   velocityScale: 0.5,
   gravity: 0.0,
+  lifetime: 0
 };
 
 let particles = [];
@@ -21,6 +22,7 @@ function setup(){
   const gui = new dat.GUI();
   gui.add(controls, 'velocityScale', -1, 1);
   gui.add(controls, 'gravity', -1, 1);
+  gui.add(controls, 'lifetime', -10, 0)
   gui.closed = true
 
   // stroke(random(255));
@@ -36,65 +38,6 @@ function setup(){
   // point(700 , 500)
 };
 
-// this function runs approx 60 times a second, i.e. every screen refresh
-
-// Fun random shapes
-// function draw(){
-//   const x = random(windowWidth);
-//   const y = random(windowHeight);
-//   fill(random(255), random(255), random(255), 50)
-//   ellipse(x, y, random(400), random(400))
-// }
-
-// function draw(){
-//   // background(0);
-//   const x = mouseX;
-//   const y = mouseY;
-//   const size = 800
-//   fill(random(255), random(255), random(255))
-//   ellipse(x, y, size, size)
-// }
-
-// function draw(){
-//   // background(0);
-//   const x = mouseX;
-//   const y = mouseY;
-//   const size = 80
-//
-//   // Change the colour space we use to specify colours
-//   colorMode(HSB, 255);
-//   fill(frameCount % 255, 255, 255)
-//   if(mouseIsPressed || keyIsDown(SHIFT)){
-//     ellipse(x, y, size, size)
-//   }
-// }
-
-// function draw(){
-//   // background(0);
-//   const x = mouseX//random(windowWidth);
-//   const y = mouseY //random(windowHeight);
-//   // const size = 80
-//   const xVel = Math.abs(x - pwinMouseX);
-//   // console.log(xVel);
-//
-//   const h = Math.floor(Math.sqrt(x*x + y*y))
-//   // console.log(h);
-//
-//   // Change the colour space we use to specify colours
-//   colorMode(HSB, 255);
-//
-//   // get a percentage ('normalized value') for the mouse x position
-//   // const xPercent = x / windowWidth;
-//   // multiply it by the taget maximum range
-//   const hue = map(x, 0, windowWidth, 0, 255);
-//
-//   const size = xVel//map(y, 0, windowHeight, 20, 400 )
-//
-//   fill(hue, 255, 255)
-//   if(mouseIsPressed || keyIsDown(SHIFT)){
-//     ellipse(x, y, size, size)
-//   }
-// }
 
 function draw(){
   background(0);
@@ -149,7 +92,7 @@ function updateParticles(){
       p.yVel *= -1
     }
 
-    p.life -= 0.0001; //decrease life of the particle
+    p.life += (0.001 * controls.lifetime); //decrease life of the particle
     // if(p.life > 0){
     //   // if the particle is still alive, add it to the output particle array
     //   outputParticles.pop(p);
