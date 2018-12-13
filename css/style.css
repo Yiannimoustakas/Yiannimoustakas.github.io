@@ -536,9 +536,9 @@ ul.main-nav.show-it {
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
   }
-  .close-button {
+  /* .close-button {
     display: none;
-  }
+  } */
 
   /*Swiper classes*/
   .client-box.swiper-slide-next {
