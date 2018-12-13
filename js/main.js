@@ -72,6 +72,11 @@ function draw(){
   updateParticles();
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth/2, windowHeight/2);
+  canvas.position(windowWidth/4, windowHeight/4);
+}
+
 function updateParticles(){
   // loop over our array of particles. drawing each of them
 

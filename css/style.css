@@ -497,11 +497,13 @@ ul.main-nav.show-it {
     font-size: 2em;
   }
   canvas {
-    display: none;
+    width: 100vw;
+    position: absolute;
+    left: 0;
   }
-  .hero {
+  /* .hero {
     background-color: #000000;
-  }
+  } */
   header.hero {
     text-align: center;
     padding-bottom: 0;
