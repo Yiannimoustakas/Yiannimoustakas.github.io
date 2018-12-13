@@ -61,7 +61,7 @@ function draw(){
   const size = Math.abs(xVel) + 50//map(y, 0, windowHeight, 20, 400 )
 
   fill(hue, 40, 40)
-  if(keyIsDown(SHIFT)){
+  if(mouseIsPressed){
     // draw a circle
     // ellipse(x, y, size, size)
 
