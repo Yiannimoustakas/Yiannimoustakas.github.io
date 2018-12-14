@@ -54,6 +54,10 @@ header.hero {
   padding-bottom: 80px;
 }
 
+h1::selection, span::selection, h3::selection, p::selection {
+  background-color: none;
+}
+
 .hero-text-covered {
   color: #000000
 }
