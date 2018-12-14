@@ -506,7 +506,7 @@ ul.main-nav.show-it {
     height: 100vh;
     position: absolute;
     overflow: hidden;
-    position: fixed !important;
+    /* position: fixed !important; */
   }
   /* .hero {
     background-color: #000000;
@@ -543,9 +543,9 @@ ul.main-nav.show-it {
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
   }
-  .close-button {
+  /* .close-button {
     display: none;
-  }
+  } */
 
   /*Swiper classes*/
   .client-box.swiper-slide-next {
