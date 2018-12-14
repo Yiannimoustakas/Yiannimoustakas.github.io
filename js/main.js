@@ -11,7 +11,7 @@ let particles = [];
 // this function will be run once when the sketch loads
 // We actually have to use the alternate way of writing functions for the main two p5 functions! Weird...
 function setup(){
-  var myCanvas = createCanvas(windowWidth, 500);
+  var myCanvas = createCanvas(innerWidth, 500);
   myCanvas.parent("heroin");
   background(0);
   noStroke();
@@ -73,8 +73,7 @@ function draw(){
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth/2, windowHeight/2);
-  canvas.position(windowWidth/4, windowHeight/4);
+  resizeCanvas(windowWidth, 500, [noRedraw]);
 }
 
 function updateParticles(){
