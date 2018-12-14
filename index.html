@@ -229,16 +229,30 @@
       <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
       <script src="js/jquery.counterup.min.js"></script>
       <script>
-      // Counterup
-      $('.counter').counterUp({
-        time: 500
-      });
 
-      // Main Navigation
-      $('#menu-toggle').click(function(){
-        $(this).toggleClass('open'),
-        $('.main-nav').toggleClass('show-it');
-      })
+        // Main Navigation
+        $('#menu-toggle').click(function(){
+          $(this).toggleClass('open'),
+          $('.main-nav').toggleClass('show-it');
+        })
+
+        // set the width and height to the full windows size
+        var SCREEN_WIDTH = window.innerWidth;
+        // Change to scroll height to make it the size of the document
+        var SCREEN_HEIGHT = document.documentElement.scrollHeight;
+
+        // Make sure to set the canvas to the screen height and width.
+        canvas.width = SCREEN_WIDTH;
+        canvas.height = SCREEN_HEIGHT;
+
+        // everytime we resize change the height and width to the window size, and reset the
+        // center point
+        window.onresize = function () {
+            SCREEN_HEIGHT = canvas.height = document.documentElement.scrollHeight;
+            SCREEN_WIDTH = canvas.width = document.body.offsetWidth;
+            HALF_WIDTH = SCREEN_WIDTH / 2;
+            HALF_HEIGHT = SCREEN_HEIGHT / 2;
+        };
       </script>
 
     </body>
