@@ -501,10 +501,10 @@ ul.main-nav.show-it {
     font-size: 2em;
   }
   canvas {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     position: absolute;
-    left: 0;
+    /* left: 0; */
   }
   /* .hero {
     background-color: #000000;
