@@ -506,6 +506,7 @@ ul.main-nav.show-it {
     height: 100%;
     position: absolute;
     overflow: hidden;
+    position: fixed !important;
   }
   /* .hero {
     background-color: #000000;
